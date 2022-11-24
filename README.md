@@ -1,16 +1,3 @@
 # brew_crew
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Brew Crew is an app that stores the brew preferences of members of a team in a database. Any new member or user can register and set their preference and later change it as well if they want in the settings panel. Everytime the user signs in, they can view their brew preference as well as their team members'.
+The project was made using Flutter and uses cloud firestore database.
