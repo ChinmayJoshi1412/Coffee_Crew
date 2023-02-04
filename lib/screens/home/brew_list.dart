@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:provider/provider.dart';
 import 'package:brew_crew/models/brew.dart';
 import 'package:brew_crew/screens/home/brewtile.dart';
+import 'package:brew_crew/shared/loading.dart';
 class BrewList extends StatefulWidget {
   const BrewList({Key? key}) : super(key: key);
 
@@ -16,7 +17,10 @@ class _BrewListState extends State<BrewList> {
   Widget build(BuildContext context) {
     final brews = Provider.of<List<Brew>?>(context);
 
-    return ListView.builder(itemCount: brews?.length ?? 0,
+    return brews==null? Loading(): ListView.builder(
+      scrollDirection: Axis.vertical,
+      shrinkWrap: true,
+      itemCount: brews?.length ?? 0,
     itemBuilder: (context,index){
       return brewtile(brews![index]);
     },);

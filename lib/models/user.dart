@@ -8,5 +8,7 @@ class UserData {
   final String name;
   final String sugars;
   final int strength;
-  UserData(this.uid,this.name,this.sugars,this.strength);
+  final String note;
+  final int tilecolor;
+  UserData(this.uid,this.name,this.sugars,this.strength,this.note,this.tilecolor);
 }
